@@ -17,6 +17,7 @@ a{
     font-weight: bold;
     background-color: #DD0000;
     color: #fff;
+    border-radius: 5px;
 }
 /* Header Area */
 .header-area{
@@ -48,7 +49,7 @@ a{
 
 /* Blog Area */
 .blog-area{
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
 }
 .blog-wrapper{
     display: flex;
@@ -68,7 +69,7 @@ a{
     padding: 10px 20px;
     display: block;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     font-size: 14px;
 }
@@ -85,6 +86,9 @@ a{
 .blog-area .blog article{
     border: 1px solid #E8E8E8;
     border-radius: 10px;
+}
+.blog-area .blog article .blog-image a img{
+    width: 100%;
 }
 .blog-area .blog article .blog-contents{
     padding: 20px 10px;
@@ -109,9 +113,12 @@ a{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin-right: 20px;
+   margin-right: 30px;
 }
 .blog-area .blog article .blog-contents .blog-meta .post-time img{
+   margin-right: 10px;
+}
+.blog-area .blog article .blog-contents .blog-meta .post-comment img{
    margin-right: 10px;
 }
 
@@ -119,6 +126,73 @@ a{
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+/* Upcoming Match Area*/
+.ucm-area{
+    padding: 100px 0 50px 0;
+}
+.ucm-wrapper{
+    display: flex;
+}
+.ucm-area .filter-bar{
+    background-color: #161616;
+    padding: 30px;
+    width: 250px;
+    height: 155px;
+    border-radius: 10px;
+    margin-right: 24px;
+}
+
+.ucm-area .filter-bar a{
+    color: #161616;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+.ucm-area .filter-bar .active{
+    background-color: #DD0000;
+    color: #fff;
+}
+.ucm-area .matchs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.ucm-area .matchs .single-match{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.ucm-area .matchs .single-match .vs-image{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ucm-area .matchs .single-match .vs-image img{
+    width: 83px;
+    height: auto;
+}
+.ucm-area .matchs .single-match .vs-image h5{
+    margin: 0 10px;
+}
+.ucm-area .matchs .single-match .vs-info{
+    text-align: center;
+}
+.ucm-area .matchs .single-match .vs-info h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+.ucm-area .matchs .single-match .vs-info p{
+    font-size: 16px;
+    font-weight: normal;
 }
 
 
@@ -154,3 +228,14 @@ a{
     color: #fff;
 }
 
+.footer-area .socials{
+    margin-top: 20px;
+}
+
+.footer-area .socials a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 16px;
+    display: inline-block;
+}
