@@ -37,6 +37,7 @@ a {
 
 .btn i {
     transition: all .5s;
+    margin-left: 5px;
 }
 
 .btn:hover {
