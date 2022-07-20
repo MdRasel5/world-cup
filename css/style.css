@@ -65,7 +65,7 @@ a {
 
 .header-content h1 {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 80px;
 }
 
 .header-content p {
@@ -264,10 +264,15 @@ a {
 }
 
 .ucm-area .matchs .single-match .vs-info h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin: 0 0 10px 0;
 }
+
+.ucm-area .matchs .single-match .vs-info span {
+    font-size: 14px;
+}
+
 
 .ucm-area .matchs .single-match .vs-info p {
     font-size: 16px;
